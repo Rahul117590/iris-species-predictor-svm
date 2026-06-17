@@ -1,0 +1,95 @@
+IRIS FLOWER CLASSIFICATION USING SVM
+======================================
+ 
+PROJECT OVERVIEW
+-----------------
+This project is about classifying Iris flowers into three different species
+- Setosa, Versicolor, and Virginica - using a Machine Learning algorithm
+called Support Vector Machine (SVM). The dataset used here is the famous
+Iris dataset, which comes built-in with the scikit-learn library, so there
+is no need to download it separately.
+ 
+ABOUT THE DATASET
+-------------------
+The Iris dataset contains 150 records (rows) of flower measurements. Each
+record has 4 features:
+1. Sepal Length (in cm)
+2. Sepal Width (in cm)
+3. Petal Length (in cm)
+4. Petal Width (in cm)
+ 
+Based on these features, each flower is labeled into one of three
+categories:
+- 0 represents Setosa
+- 1 represents Versicolor
+- 2 represents Virginica
+ 
+STEPS FOLLOWED IN THIS PROJECT
+---------------------------------
+ 
+1. Loading the Data
+   The Iris dataset was loaded directly from scikit-learn's built-in
+   datasets. It already comes with the feature values, target labels,
+   and the names of both features and target classes.
+ 
+2. Understanding the Data
+   Checked what features are present, how many total rows and columns
+   exist, and what the three target classes are called.
+ 
+3. Creating a DataFrame
+   Converted the raw data into a Pandas DataFrame so it becomes easier
+   to view, filter, and analyze. This step makes the data look like a
+   proper table with column names.
+ 
+4. Adding Target and Flower Name Columns
+   Initially the dataset only had numeric target values (0, 1, 2). A
+   new column was added to show the actual flower name (Setosa,
+   Versicolor, Virginica) instead of just numbers, which makes the data
+   easier to read and understand.
+ 
+5. Splitting Data by Class
+   The full dataset was divided into three smaller groups, one for each
+   flower type, so that each group could be studied and visualized
+   separately.
+ 
+6. Visualizing the Data
+   Scatter plots were created to visually compare the flowers based on:
+   - Sepal Length vs Sepal Width
+   - Petal Length vs Petal Width
+   This helps in understanding how clearly the different flower species
+   are separated from each other based on their measurements.
+ 
+7. Splitting Data for Training and Testing
+   The data (excluding the target and flower name columns) was split
+   into two parts - 80 percent for training the model and 20 percent
+   for testing it. This helps check how well the model performs on
+   data it has never seen before.
+ 
+8. Training the Model
+   A Support Vector Machine (SVM) model was trained using the training
+   data. SVM is a popular algorithm used for classification problems
+   like this one.
+ 
+9. Checking Accuracy
+   After training, the model was tested on the unseen test data, and
+   its accuracy was calculated to see how correctly it predicts the
+   flower species.
+ 
+10. Trying Different Settings
+    The model was also tested with a regularization parameter (C=1)
+    and with a linear kernel instead of the default one, to compare
+    whether these changes improve or affect the accuracy.
+ 
+RESULT
+--------
+The SVM model was able to classify the Iris flowers with good accuracy.
+Testing different kernels and parameters helped in understanding how
+these settings can influence the model's performance.
+ 
+CONCLUSION
+------------
+This project gives a basic but complete walkthrough of a machine learning
+classification task - starting from understanding raw data, visualizing
+it, training a model, and finally evaluating its performance. It is a
+good beginner-friendly example to understand how SVM works on a simple
+dataset.
